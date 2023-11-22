@@ -817,6 +817,7 @@ __metadata:
     "@astrojs/ts-plugin": "npm:^1.3.1"
     astro: "npm:^3.6.0"
     autoprefixer: "npm:^10.4.16"
+    postcss-import: "npm:^15.1.0"
     tailwindcss: "npm:^3.0.24"
   languageName: unknown
   linkType: soft

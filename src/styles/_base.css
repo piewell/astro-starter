@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--color);
+}
+
+html {
+  color: var(--color);
+  background-color: var(--bg-color);
+  @apply text-base;
+  @apply font-sans;
+}
+
+body {
+}
+
+:is(h1) {
+  @apply text-h1;
+}
+
+:is(h2) {
+  @apply text-h2;
+}
+
+:is(code) {
+  @apply font-mono;
+}
