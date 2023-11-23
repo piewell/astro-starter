@@ -1,38 +1,42 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Image from '../components/Image.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="mx-auto p-4">
-		<h1 class="my-8">Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			Check out the <code>src/pages</code> directory to get started.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Chat"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="Astro Template">
+	<div class="m-auto max-w-2xl">
+		<header class="my-8">
+			<h1><span class="text-gradient">Astro</span> Template</h1>
+		</header>
+		<main>
+			<div class="summary">
+				<p>
+					You better get your coat out, this is going to be a cold painting.
+				</p>
+			</div>
+			<div class="pb-8">
+				<h2 class="pb-4">When you do it your way you can go anywhere you choose.</h2>
+				<Image src="./imgs/inline-image.jpeg" caption="Mountain Summit, Bob Ross"/>
+				<p class="pt-4">See. We take the corner of the brush and let it play back-and-forth. Working it up and down, back and forth. A beautiful little sunset. Anyone can paint. Use your imagination, let it go. In your world you have total and absolute power.</p>
+				<p class="pt-4">I can't think of anything more rewarding than being able to express yourself to others through painting. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. You can do anything your heart can imagine. Let's make a nice big leafy tree. That's what painting is all about. It should make you feel good when you paint. You can work and carry-on and put lots of little happy things in here.</p>
+			</div>
+			<div class="link-cards">
+				<ul class="link-card-grid">
+					<Card
+						href="/"
+						title="Let's get wild today."
+						body="It's a super day, so why not make a beautiful sky? Let's get crazy."
+					/>
+					<Card
+						href="/"
+						title="Let your heart be your guide."
+						body="Isn't that fantastic that you can create an almighty tree that fast? If it's not what you want - stop and change it."
+					/>
+				</ul>
+			</div>
+		</main>
+	</div>
 </Layout>
 <style>
 	:root {
@@ -60,12 +64,12 @@ import Card from '../components/Card.astro';
 		}
 	}
 
-	.instructions {
+	.summary {
 		line-height: 1.6;
-		margin: 1rem 0;
+		margin-bottom: 3rem;
 		background: var(--primary-color);
-		padding: 1rem;
-		border-radius: 0.4rem;
+		padding: 1rem 1.5rem;
+		border-radius: var(--rounded-base);
 		color: var(--bg-color);
 		
 		code {
@@ -81,5 +85,16 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
 		padding: 0;
+	}
+	
+	.footer {
+		padding: 2rem 0;
+		
+		> ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+			justify-content: center;
+		}
 	}
 </style>

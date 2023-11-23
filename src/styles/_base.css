@@ -11,8 +11,8 @@ body {
   color: var(--color);
 }
 
-main {
-  max-width: 60ch;
+:is(h1, h2, h3) {
+  @apply font-heading;
 }
 
 :is(h1) {
@@ -21,6 +21,10 @@ main {
 
 :is(h2) {
   @apply text-h2;
+}
+
+:is(h3) {
+  @apply text-h3;
 }
 
 :is(code) {

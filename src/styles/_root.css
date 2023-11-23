@@ -1,14 +1,12 @@
 /* Root variables */
 
 :root {
-  --bg-color: hsl(10, 21%, 95%);
-  --color: hsl(12, 5%, 4%);
-  --border-color: hsl(17, 24%, 90%);
+  --bg-color: #edf6f4;
+  --color: #081c15;
+  --border-color: #89c2d9;
 
-  --primary-color: hsl(247, 95%, 60%);
-  --secondary-color: hsl(311, 62%, 62%);
+  --primary-color: #014f86;
+  --secondary-color: #40916c;
 
-  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-  --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
-  --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --rounded-base: 0.5rem;
 }

@@ -10,16 +10,15 @@ const { href, title, body } = Astro.props as Props;
 
 <li class="link-card">
 	<a href={href}>
-		<h2>
+		<h3>
 			{title}
 			<span>&rarr;</span>
-		</h2>
+		</h3>
 		<p>
 			{body}
 		</p>
 	</a>
 </li>
-
 <style>
 	:root {
 		--link-gradient: linear-gradient(45deg, var(--primary-color), var(--secondary-color) 30%, var(--border-color) 60%);
@@ -31,18 +30,18 @@ const { href, title, body } = Astro.props as Props;
 		padding: 0.15rem;
 		background-image: var(--link-gradient);
 		background-size: 400%;
-		border-radius: 0.5rem;
+		border-radius: var(--rounded-base);
 		background-position: 100%;
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		
 		&:is(:hover, :focus-within) {
 			background-position: 0;
 			
-			h2 {
+			h3 {
 				color: var(--primary-color);
 			}
 			
-			h2 span {
+			h3 span {
 				will-change: transform;
 				transform: translateX(2px);
 			}
@@ -59,13 +58,13 @@ const { href, title, body } = Astro.props as Props;
 			opacity: 0.8;
 		}
 		
-		h2 {
+		h3 {
 			margin: 0;
 			transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 			
 		}
 		
-		h2 span {
+		h3 span {
 			display: inline-block;
 			transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 		}
