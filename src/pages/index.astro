@@ -4,8 +4,8 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+	<main class="mx-auto p-4">
+		<h1 class="my-8">Welcome to <span class="text-gradient">Astro</span></h1>
 		<p class="instructions">
 			Check out the <code>src/pages</code> directory to get started.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -34,20 +34,9 @@ import Card from '../components/Card.astro';
 		</ul>
 	</main>
 </Layout>
-
 <style>
 	:root {
-		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
-
-	h1 {
-		margin: 2rem 0;
-	}
-
-	main {
-		margin: auto;
-		padding: 1em;
-		max-width: 60ch;
+		--astro-gradient: linear-gradient(0deg, var(--primary-color), var(--secondary-color));
 	}
 
 	.text-gradient {
@@ -74,17 +63,17 @@ import Card from '../components/Card.astro';
 	.instructions {
 		line-height: 1.6;
 		margin: 1rem 0;
-		background: #4f39fa;
+		background: var(--primary-color);
 		padding: 1rem;
 		border-radius: 0.4rem;
 		color: var(--bg-color);
-	}
-
-	.instructions code {
-		font-size: 0.875em;
-		border: 0.1em solid var(--border-color);
-		border-radius: 4px;
-		padding: 0.15em 0.25em;
+		
+		code {
+			font-size: 0.875em;
+			border: 0.1em solid var(--border-color);
+			border-radius: .25rem;
+			padding: 0.15em 0.25em;
+		}
 	}
 
 	.link-card-grid {
