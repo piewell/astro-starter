@@ -4,29 +4,15 @@ A simple starter template with Astro & TailwindCSS.
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside of this Astro project, you'll see the following folders and files:
 
-```
-/
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   └── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│   │   └── index.astro
-│   └── styles/
-│       └── global.css
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components or layouts.
-
-Any static assets, like images, can be placed in the `public/` directory.
+| Folder           | Description                                                                      |
+| :--------------- | :------------------------------------------------------------------------------- |
+| `public`         | Any static assets, like images                                                   |
+| `src/components` | Small, reusable components                                                       |
+| `src/layouts`    | Global layout components                                                         |
+| `src/pages`      | `.astro` or `.md` files. Each page is exposed as a route based on its file name. |
+| `src/styles`     | Global styles 💅                                                                 |
 
 ## 💻 Commands
 
@@ -44,4 +30,5 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Check [Astro's documentation](https://docs.astro.build) or jump into Astro's [Discord server](https://astro.build/chat).
+- [Astro's documentation](https://docs.astro.build)
+- [TailwindCSS's documentation](https://tailwindcss.com)
