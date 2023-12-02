@@ -1,5 +1,7 @@
 # Astro Starter Template
 
+A simple starter template with Astro & TailwindCSS.
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
@@ -26,7 +28,7 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## 💻 Commands
 
 All commands are run from the root of the project, from a terminal:
 

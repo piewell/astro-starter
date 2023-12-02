@@ -3,10 +3,30 @@
 :root {
   --bg-color: #edf6f4;
   --color: #081c15;
+  --color-secondary: #0f3628;
   --border-color: #89c2d9;
 
   --primary-color: #014f86;
   --secondary-color: #40916c;
 
   --rounded-base: 0.5rem;
+
+  --width-max: 900px;
+
+  color-scheme: light dark;
+  color: var(--color);
+  background-color: var(--bg-color);
+  @apply text-base;
+  @apply font-sans;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: #c6d6d2;
+    --color-secondary: #9eaaa7;
+    --bg-color: #081c15;
+    --border-color: #00365d;
+    --primary-color: #40916c;
+    --secondary-color: #006ebc;
+  }
 }

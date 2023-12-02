@@ -1,32 +1,5 @@
-html {
-  color: var(--color);
-  background-color: var(--bg-color);
-  @apply text-base;
-  @apply font-sans;
-}
-
 body {
-  margin: 0;
-  background-color: var(--bg-color);
-  color: var(--color);
-}
-
-:is(h1, h2, h3) {
-  @apply font-heading;
-}
-
-:is(h1) {
-  @apply text-h1;
-}
-
-:is(h2) {
-  @apply text-h2;
-}
-
-:is(h3) {
-  @apply text-h3;
-}
-
-:is(code) {
-  @apply font-mono;
+  margin: 0 auto;
+  max-width: var(--width-max);
+  padding: 0 2rem;
 }

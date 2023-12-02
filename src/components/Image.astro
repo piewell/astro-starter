@@ -8,12 +8,16 @@ export interface Props {
 const { src, alt = "", caption } = Astro.props as Props;
 ---
 
-<figure class="figure">
+<figure class="figure space-y-2">
 	<img src={src} alt={alt}/>
-	<div class="text-sm pt-1">{caption}</div>
+	<div class="text-sm italic caption">{caption}</div>
 </figure>
 <style>
 	.figure {		
 		img { border-radius: var(--rounded-base); }
+	}
+	
+	.caption {
+		color: var(--color-secondary);
 	}
 </style>
