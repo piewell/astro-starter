@@ -5,95 +5,96 @@ import Image from '../components/Image.astro';
 ---
 
 <Layout title="Astro Template">
-	<div>
-		<header class="my-8">
-			<h1><span class="text-gradient">Astro</span> Template</h1>
-		</header>
-		<main class="space-y-10">
-			<div class="summary">
-				<p>
-					You better get your coat out, this is going to be a cold painting.
-				</p>
-			</div>
-			<div class="space-y-4">
-				<h2>When you do it your way you can go anywhere you choose.</h2>
-				<Image src="./imgs/inline-image.jpeg" caption="Mountain Summit, Bob Ross"/>
-				<p>See. We take the corner of the brush and let it play back-and-forth. Working it up and down, back and forth. A beautiful little sunset. Anyone can paint. Use your imagination, let it go. In your world you have total and absolute power.</p>
-				<p>I can't think of anything more rewarding than being able to express yourself to others through painting. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. You can do anything your heart can imagine. Let's make a nice big leafy tree. That's what painting is all about. It should make you feel good when you paint. You can work and carry-on and put lots of little happy things in here.</p>
-			</div>
-			<div class="link-cards">
-				<ul class="link-card-grid">
-					<Card
-						href="/"
-						title="Let's get wild today."
-						body="It's a super day, so why not make a beautiful sky? Let's get crazy."
-					/>
-					<Card
-						href="/"
-						title="Let your heart be your guide."
-						body="Isn't that fantastic that you can create an almighty tree that fast? If it's not what you want - stop and change it."
-					/>
-				</ul>
-			</div>
-		</main>
-	</div>
+  <div>
+    <header class="my-8">
+      <h1><span class="text-gradient">Astro</span> Template</h1>
+    </header>
+    <main class="space-y-10">
+      <div class="summary">
+        <p>
+          You better get your coat out, this is going to be a cold painting.
+        </p>
+      </div>
+      <div class="space-y-4">
+        <h2>When you do it your way you can go anywhere you choose.</h2>
+        <Image src="./imgs/inline-image.jpeg" caption="Mountain Summit, Bob Ross"/>
+        <p>See. We take the corner of the brush and let it play back-and-forth. Working it up and down, back and forth. A beautiful little sunset. Anyone can paint. Use your imagination, let it go. In your world you have total and absolute power.</p>
+        <p>I can't think of anything more rewarding than being able to express yourself to others through painting. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. You can do anything your heart can imagine. Let's make a nice big leafy tree. That's what painting is all about. It should make you feel good when you paint. You can work and carry-on and put lots of little happy things in here.</p>
+      </div>
+      <div class="link-cards">
+        <ul class="link-card-grid">
+          <Card
+            href="/"
+            title="Let's get wild today."
+            body="It's a super day, so why not make a beautiful sky? Let's get crazy."
+          />
+          <Card
+            href="/"
+            title="Let your heart be your guide."
+            body="Isn't that fantastic that you can create an almighty tree that fast? If it's not what you want - stop and change it."
+          />
+        </ul>
+      </div>
+    </main>
+  </div>
 </Layout>
+
 <style>
-	:root {
-		--astro-gradient: linear-gradient(0deg, var(--primary-color), var(--secondary-color));
-	}
+  :root {
+    --astro-gradient: linear-gradient(0deg, var(--primary-color), var(--secondary-color));
+  }
 
-	.text-gradient {
-		font-weight: 900;
-		background-image: var(--astro-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
-	}
+  .text-gradient {
+    font-weight: 900;
+    background-image: var(--astro-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: 0.4rem;
+    animation: pulse 4s ease-in-out infinite;
+  }
 
-	@keyframes pulse {
-		0%,
-		100% {
-			background-position-y: 0%;
-		}
-		50% {
-			background-position-y: 80%;
-		}
-	}
+  @keyframes pulse {
+    0%,
+    100% {
+      background-position-y: 0%;
+    }
+    50% {
+      background-position-y: 80%;
+    }
+  }
 
-	.summary {
-		line-height: 1.6;
-		background: var(--primary-color);
-		padding: 1rem 1.5rem;
-		border-radius: var(--rounded-base);
-		color: var(--bg-color);
-		
-		code {
-			font-size: 0.875em;
-			border: 0.1em solid var(--border-color);
-			border-radius: .25rem;
-			padding: 0.15em 0.25em;
-		}
-	}
+  .summary {
+    line-height: 1.6;
+    background: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: var(--rounded-base);
+    color: var(--bg-color);
+    
+    code {
+      font-size: 0.875em;
+      border: 0.1em solid var(--border-color);
+      border-radius: .25rem;
+      padding: 0.15em 0.25em;
+    }
+  }
 
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-	
-	.footer {
-		padding: 2rem 0;
-		
-		> ul {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 1rem;
-			justify-content: center;
-		}
-	}
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  .footer {
+    padding: 2rem 0;
+    
+    > ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  }
 </style>

@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.4",
+    "@eslint/js": "^9.21.0",
     "@tailwindcss/postcss": "^4.0.9",
     "@types/eslint": "^9.6.1",
     "@typescript-eslint/parser": "^8.25.0",
@@ -22,8 +23,10 @@
     "postcss": "^8.5.3",
     "postcss-grouped-plugins": "^1.0.0",
     "postcss-mixins": "^11.0.3",
-    "tailwindcss": "^4.0.9",
-    "typescript": "5.8.2"
+    "tailwindcss": "^4.0.9"
   },
-  "packageManager": "yarn@4.7.0"
+  "packageManager": "yarn@4.7.0",
+  "dependencies": {
+    "typescript": "^5.8.2"
+  }
 }
