@@ -1,0 +1,59 @@
+/* Resources:
+- https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  /* Use a more-intuitive box-sizing model */
+  box-sizing: border-box;
+  /* Remove default margin */
+  margin: 0;
+}
+
+body {
+  /* Reset margins */
+  margin: 0;
+  /* Add accessible line-height */
+  line-height: 1.5;
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Reset buttons */
+button {
+  padding: 0px;
+  border: 0px;
+}
+
+/* Show cursor, unless disabled */
+input, button, a, select {
+  cursor: pointer;
+  
+  &:disabled, &[aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+}
+
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}

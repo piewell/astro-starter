@@ -1,4 +1,8 @@
 /* Global appearance styles */
+body {
+  background-color: var(--bg-color);
+}
+
 a {
   color: var(--primary-color);
   @apply transition-colors;
@@ -19,7 +23,7 @@ button {
   border-radius: var(--rounded-base);
   @apply transition-colors;
 
-  &:hover {
+  &:hover:not(:disabled, [aria-disabled="true"]) {
     background-color: var(--secondary-color);
   }
 }

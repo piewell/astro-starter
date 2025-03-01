@@ -1,0 +1,24 @@
+/* Global typography styles */
+body {
+  font-family: var(--font-sans);
+}
+
+:is(h1, h2, h3) {
+  font-weight: var(--font-weight-heading);
+}
+
+:is(h1) {
+  font-size: var(--text-head1);
+}
+
+:is(h2) {
+  font-size: var(--text-head2);
+}
+
+:is(h3) {
+  font-size: var(--text-head3);
+}
+
+:is(code) {
+  /* @apply font-mono; */
+}

@@ -1,5 +1,4 @@
 /* Root variables */
-
 :root {
   --bg-color: #edf6f4;
   --color: #081c15;
@@ -16,8 +15,6 @@
   color-scheme: light dark;
   color: var(--color);
   background-color: var(--bg-color);
-  @apply text-base;
-  @apply font-sans;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,6 +1,14 @@
 /* Global styles */
+@layer reset, theme, root, base, components, page, layout, utilities;
 
-@import "_root.css";
-@import "_base.css";
-@import "_appearance.css";
-@import "_typography.css";
+@import "tailwind/_theme.css";
+@import "tailwindcss/theme.css" layer(theme);
+
+@import "base/_reset.css" layer(reset);
+
+@import "base/_root.css" layer(base);
+@import "base/_base.css" layer(base);
+@import "base/_appearance.css" layer(base);
+@import "base/_typography.css" layer(base);
+
+@import "tailwindcss/utilities.css" layer(utilities);
