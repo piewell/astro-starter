@@ -1,6 +1,12 @@
 # Astro Starter Template
 
-A simple starter template with Astro & TailwindCSS.
+A simple starter template with Astro, TailwindCSS, and Typescript.
+
+Includes:
+
+- Eslint and Stylelint, for finding and fixing issues 🛠️
+- Depcheck, to keep your deps in check 👀
+- Prettier, to tidy things up 🧹
 
 ## 🚀 Project Structure
 
