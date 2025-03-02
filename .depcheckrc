@@ -1,0 +1,1 @@
+ignores: ["eslint*", "*/eslint", "*eslint/*", "postcss*", "*/postcss", "prettier*", "stylelint*", "tailwindcss", "typescript"]
