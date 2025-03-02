@@ -2,7 +2,9 @@
 - https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   /* Use a more-intuitive box-sizing model */
   box-sizing: border-box;
   /* Remove default margin */
@@ -19,13 +21,20 @@ body {
 }
 
 /* Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -36,16 +45,26 @@ button {
 }
 
 /* Show cursor, unless disabled */
-input, button, a, select {
+input,
+button,
+a,
+select {
   cursor: pointer;
-  
-  &:disabled, &[aria-disabled="true"] {
+
+  &:disabled,
+  &[aria-disabled="true"] {
     cursor: not-allowed;
   }
 }
 
 /* Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -54,6 +73,11 @@ p {
   text-wrap: pretty;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }

@@ -1,15 +1,15 @@
 @theme {
   /* --color-*: initial; */
-    
+
   /* --text-*: initial; */
   --text-head1: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
   --text-head2: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
   --text-head3: clamp(1.19rem, 0.7vw + 1.2rem, 1.2rem);
   --text-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-  --text-sm: clamp(.75rem, 0.34vw + 0.91rem, .875rem);
-  
+  --text-sm: clamp(0.75rem, 0.34vw + 0.91rem, 0.875rem);
+
   --font-weight-*: initial;
   --font-weight-heading: 600;
   --font-weight-normal: 400;
   --font-weight-bold: 500;
-};
+}

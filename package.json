@@ -7,8 +7,13 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "lint": "eslint .",
-    "fix": "eslint . --fix"
+    "lint": "yarn lint:js & yarn lint:css",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint '**/*.{css,astro}'",
+    "fix": "yarn fix:js & yarn fix:css & yarn pretty",
+    "fix:js": "eslint . --fix",
+    "fix:css": "stylelint '**/*.{css,astro}'",
+    "pretty": "prettier . --write"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.4",
@@ -22,7 +27,14 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "postcss": "^8.5.3",
     "postcss-grouped-plugins": "^1.0.0",
+    "postcss-html": "^1.8.0",
     "postcss-mixins": "^11.0.3",
+    "prettier": "^3.5.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "stylelint": "^16.15.0",
+    "stylelint-config-astro": "^1.0.4",
+    "stylelint-config-recommended": "^15.0.0",
+    "stylelint-config-tailwindcss": "^1.0.0",
     "tailwindcss": "^4.0.9"
   },
   "packageManager": "yarn@4.7.0",

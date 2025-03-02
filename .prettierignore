@@ -1,0 +1,4 @@
+# Any file in .gitignore will also be ignored by prettier
+
+# Ignore the .astro folder
+.astro/
